@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- map-svg -->
+    <link href="./assets/svgMap-master/dist/svgMap.css" rel="stylesheet">
+    <script src="./assets/svgMap-master/dist/svgMap.js"></script>
+
+    <title>Water Monitoring</title>
+</head>
+
+<body>
+    <div>
+
+        <!-- ==========================  side-nav ======================= -->
+        <div class="d-flex">
+            <div class="w-10 position-relative shadow bg-white rounded height-100vh">
+                <div class="side-nav shadow border-right bg-white rounded">
+                    <div class="d-flex justify-content-center position-relative py-4">
+                        <nav class="">
+                            <div class="d-flex justify-content-center cursor-pointer">
+                                <img src="assets/images/logoHB.png">
+                            </div>
+                            <ul class="navbar-nav py-4 ">
+                                <li class="d-flex align-items-center">
+                                    <div style="width: 80px;" class="pr-2 d-flex justify-content-center"><img
+                                            class="w-100" src="assets/images/dashboard.png">
+                                    </div>
+                                    <a style="font-size: 16px; font-weight: 500;" class="nav-link text-dark"
+                                        href="#">Dashboard</a>
+                                </li>
+                                <li class="d-flex mt-3 align-items-center">
+                                    <div style="width: 80px;" class="pr-2 d-flex justify-content-center"><img
+                                            src="assets/images/station.png"> </div>
+                                    <a class="nav-link text-dark" href="#">Station List</a>
+                                </li>
+                                <li class="d-flex mt-3 align-items-center">
+                                    <div style="width: 80px;" class="pr-2 d-flex justify-content-center"><img
+                                            src="assets/images/seasons.png"> </div>
+                                    <a class="nav-link text-dark" href="#">Seasons</a>
+                                </li>
+                                <li class="d-flex mt-3 align-items-center">
+                                    <div style="width: 80px;" class="pr-2 d-flex justify-content-center"><img
+                                            src="assets/images/settings.png"> </div>
+                                    <a class="nav-link text-dark" href="#">Settings</a>
+                                </li>
+                                <li class="d-flex mt-3 align-items-center">
+                                    <div style="width: 80px;" class="pr-2 d-flex justify-content-center"><img
+                                            src="assets/images/logout.png"> </div>
+                                    <a class="nav-link text-dark" href="customers.html">LogOut</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                   
+                   
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div style="bottom: 0; font-size: 12px;" class="position-absolute w-100 justify-content-center d-flex">
+                        <p>February 12, 2023</p>
+                        <div class="border-right mx-1"></div>
+                        <p>06:11:43</p>
+                        <div class="border-right mx-1"></div>
+                        <p>Sunday</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= Header-section ======================= -->
+            <div class="w-100">
+                <div style="background: #FFFFFF;
+                box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.16);"
+                    class="d-flex px-4 justify-content-between py-3 text-align-center align-items-center">
+                    <div class="w-25">
+                        <p class=" text-xl-left font-weight-bold">Water Monitoring</p>
+                    </div>
+                    <div class="w-100">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <div
+                                class="input-groupd d-flex justify-content-end align-items-center w-50 mr-3 rounded position-relative rounded">
+                                <input style="border:none; outline: none;background: #FFFFFF;
+                                box-shadow: 4px 4px 4px rgba(43, 43, 43, 0.11);
+                                border-radius: 12px;" type="search" class="py-2 px-3 w-100" placeholder="Search"
+                                    aria-label="Search" aria-describedby="search-addon" />
+                                <span class=" border-0 position-absolute right-0" style="right: 10px; top:10px;"
+                                    id="search-addon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                            <div class="w-25">
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <div class="mr-3 cursor-pointer">
+                                        <img src="./assets/images/Notification Bell.png" alt="notification">
+                                    </div>
+                                    <div class="mr-2">
+                                        <p class="font-weight-bold">Lauren Smith</p>
+                                        <p style="font-size: 12px;" class="text-sm-right font-weight-ligh">Cashier</p>
+                                    </div>
+                                    <div style="border:1px solid #1B5ED9; border-radius: 100%" class=" p-1">
+                                        <img class="rounded" src="./assets/images/rounded-pic.png" alt="">
+                                    </div>
+                                    <div class="ml-2">
+                                        <a class="text-dark" href="">
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard -->
+
+
+
+                <div class="my-3 mx-3">
+                    <div>
+                        <p class=" text-lg-left my-2 font-weight-ligh">Dashboard</p>
+                    </div>
+                    <!-- <div class="bg-map"></div> -->
+                </div>
+                <div class="mx-3">
+                    <div id="svgMapExample"></div>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            // svg map starting point
+
+            // GDP data
+            var svgMapDataGPD = {
+                data: {
+                    gdp: {
+                        name: 'GDP per capita',
+                        format: '{0} USD',
+                        thousandSeparator: ',',
+                        thresholdMax: 50000,
+                        thresholdMin: 1000
+                    },
+                    change: {
+                        name: 'Change to year before',
+                        format: '{0} %'
+                    },
+                    gdpAdjusted: {
+                        name: 'Purchasing Power Parity',
+                        format: '{0} USD',
+                        thousandSeparator: ',',
+                        thresholdMax: 50000,
+                        thresholdMin: 1000
+                    },
+                    changeAdjusted: {
+                        name: 'Change to year before',
+                        format: '{0} %'
+                    }
+                },
+                applyData: 'gdpAdjusted',
+                values: {
+                    AF: { gdp: 587, change: 4.73, gdpAdjusted: 1958, changeAdjusted: 0.02 },
+                    link: 'https://cssscript.com',
+                    linkTarget: '_blank'
+                }
+            }
+            new svgMap({
+                targetElementID: 'svgMapExample',
+
+                data: svgMapDataGPD
+            });
+
+        </script>
+        <script src="./assets/svgMap-master/dist/svgMap.js"></script>
+</body>
+
+</html>
